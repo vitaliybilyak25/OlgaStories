@@ -2,7 +2,6 @@
 # Deploy Olga Stories to GitHub Pages (site at repo root)
 # Run from project root: ./deploy.sh ["optional commit message"]
 set -e
-cp -r src/* .
 git add index.html main_text.html text*.html generic.html elements.html assets/ images/ CNAME LICENSE.txt README.txt
 git status
 MSG="${1:-Update site}"

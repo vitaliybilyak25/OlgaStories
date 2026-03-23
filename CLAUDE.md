@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 To preview the site, open any HTML file directly in a browser:
 ```
-open src/index.html
+open index.html
 ```
 
 There are no build, lint, or test commands — this is a plain static HTML/CSS/JS project.
@@ -19,11 +19,11 @@ There are no build, lint, or test commands — this is a plain static HTML/CSS/J
 ```bash
 ./deploy.sh ["optional commit message"]
 ```
-This copies `src/` to the repo root, commits, and pushes to the `github` remote (vitaliybilyak25/OlgaStories). GitHub Pages serves from `/ (root)`.
+Commits and pushes the site at repo root to the `github` remote (vitaliybilyak25/OlgaStories).
 
 ## Architecture
 
-Edit site files in `src/`; the deploy script copies them to the repo root for GitHub Pages. The `Reqs/` folder contains source assets (raw photos, mind map) that are not served.
+All site files live at the repo root (`index.html`, `assets/`, `images/`, etc.). The `Reqs/` folder contains source assets (raw photos, mind map) that are not served.
 
 **Navigation (3 sections):**
 - `index.html` — Copywriter ("Копірайтерка") — main landing page with article index

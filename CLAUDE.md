@@ -19,11 +19,11 @@ There are no build, lint, or test commands — this is a plain static HTML/CSS/J
 ```bash
 ./deploy.sh ["optional commit message"]
 ```
-This copies `src/` to `docs/`, commits, and pushes to the `github` remote (vitaliybilyak25/OlgaStories).
+This copies `src/` to the repo root, commits, and pushes to the `github` remote (vitaliybilyak25/OlgaStories). GitHub Pages serves from `/ (root)`.
 
 ## Architecture
 
-All site files live in `src/`. The `Reqs/` folder contains source assets (raw photos, mind map) that are not served but used as source material.
+Edit site files in `src/`; the deploy script copies them to the repo root for GitHub Pages. The `Reqs/` folder contains source assets (raw photos, mind map) that are not served.
 
 **Navigation (3 sections):**
 - `index.html` — Copywriter ("Копірайтерка") — main landing page with article index

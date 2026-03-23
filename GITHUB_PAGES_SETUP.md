@@ -29,4 +29,4 @@ Ensure **Build and deployment** is set to:
 
 - **Source**: Deploy from a branch
 - **Branch**: main
-- **Folder**: /docs
+- **Folder**: / (root)

@@ -12,4 +12,4 @@ if git diff --cached --quiet 2>/dev/null; then
 fi
 git commit -m "$MSG"
 git push github main
-echo "Done. Site will update at https://vitaliybilyak25.github.io/OlgaStories/"
+echo "Done. Site at https://vitaliybilyak25.github.io/OlgaStories/ (or olgastories.com when DNS configured)"
